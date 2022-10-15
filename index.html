@@ -1,0 +1,75 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/19b72192bf.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+  <title>Navbar</title>
+</head>
+
+<body>
+  <nav>
+    <span id="navbar">
+      <i class="fa-solid fa-dumbbell fa-3x logo"></i>
+      <span id="logo-name">Karachi Fitness</span>
+      <span id="nav-items">
+        <ul id="nav-list">
+          <li> <a class="active" href="">Home</a></li>
+          <li> <a href="">About Us</a></li>
+          <li> <a href="">Fitness Calculator</a></li>
+          <li> <a href="">Contact us</a></li>
+        </ul>
+      </span>
+      <span id="buttons">
+        <button>Call us Now</button>
+        <button>Email Us</button>
+      </span>
+    </span>
+  </nav>
+
+  <section>
+    <div id="form">
+      <h3>Join the best gym of Karachi <br>-----Now-----</h3>
+
+      <input type="text" id="name" placeholder="Enter Your Name">
+      <br>
+      <input type="number" id="age" placeholder="Enter Your Age" required>
+      <br>
+      <select name="" id="gender">
+        <option value="empty" disabled selected>Select Gender</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="other">Other</option>
+      </select>
+      <br>
+      <input type="text" id="locality" placeholder="Enter your Locality">
+      <br>
+      <input type="email" id="email" placeholder="Enter your Email Id">
+      <br>
+      <input type="number" id="number" placeholder="Enter your Phone Number">
+      <button id="submit" type="submit" style="color: white;" onclick="submit()">Submit Now</button>
+    </div>
+    <div id="result">
+      <h2 style="text-align: center;">Result</h2>
+      <h3>Full Name:</h3>
+      <span id="nameP">--</span>
+      <h3>Age:</h3>
+      <span id="ageP">--</span>
+      <h3>Gender:</h3>
+      <span id="genderP">--</span>
+      <h3>Locality:</h3>
+      <span id="localityP">--</span>
+      <h3>Email:</h3>
+      <span id="emailP">--</span>
+      <h3>Contact:</h3>
+      <span id="numberP">--</span>
+    </div>
+  </section>
+<script src="./script.js"></script>
+  
+
+</body>
+
+</html>
